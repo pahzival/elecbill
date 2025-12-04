@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerCalc</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LANDING PAGE -->
+<div id="landingPage" class="container">
+    <div class="logo">⚡</div>
+    <h2>PowerCalc</h2>
+    <h3>Calculate & Track Your Electric Bills</h3>
+
+    <p class="description">
+        Take control of your electricity costs. Calculate bills in real-time, save your history, and monitor your consumption.
+    </p>
+
+    <button class="btn-primary" onclick="showLogin()">Get Started</button>
+    <button class="btn-secondary" onclick="showLogin()">Login</button>
+
+    <div class="features">
+        <div class="feature-box">
+            <strong>Real-time Results</strong>
+            <p>Instant calculations based on your consumption and rates.</p>
+        </div>
+
+        <div class="feature-box">
+            <strong>Track History</strong>
+            <p>Save and review your bills to monitor spending trends.</p>
+        </div>
+
+        <div class="feature-box">
+            <strong>Secure Account</strong>
+            <p>Protected with secure local storage.</p>
+        </div>
+    </div>
+</div>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="container small hidden">
+    <a class="back" onclick="showLanding()">← Back</a>
+
+    <div class="logo">⚡</div>
+    <h2>Welcome Back</h2>
+    <p>Login to access your dashboard</p>
+
+    <div class="card">
+        <label>Email Address</label>
+        <input id="loginEmail" type="email">
+
+        <label>Password</label>
+        <input id="loginPass" type="password">
+
+        <button class="btn-primary" onclick="login()">Login</button>
+
+        <p class="register">Don't have an account? <a onclick="showRegister()">Register here</a></p>
+    </div>
+</div>
+
+<!-- REGISTER PAGE -->
+<div id="registerPage" class="container small hidden">
+    <a class="back" onclick="showLogin()">← Back</a>
+
+    <div class="logo">⚡</div>
+    <h2>Create Account</h2>
+
+    <div class="card">
+        <label>Email</label>
+        <input id="regEmail" type="email">
+
+        <label>Password</label>
+        <input id="regPass" type="password">
+
+        <button class="btn-primary" onclick="register()">Register</button>
+    </div>
+</div>
+
+<!-- DASHBOARD PAGE -->
+<div id="dashboardPage" class="container hidden">
+    <h2>Your Dashboard</h2>
+
+    <p><strong>Total Bills Saved:</strong> <span id="billCount">0</span></p>
+
+    <button class="btn-primary" onclick="showCalculator()">Calculate Bill</button>
+    <button class="btn-secondary" onclick="showProfile()">Profile</button>
+    <button class="btn" onclick="logout()">Logout</button>
+
+    <div class="section-title">Bill History</div>
+    <div id="historyList"></div>
+</div>
+
+<!-- PROFILE PAGE -->
+<div id="profilePage" class="container hidden">
+    <a class="back" onclick="showDashboard()">← Back</a>
+
+    <h2>Profile</h2>
+    <div class="info-box">
+        <strong id="profileEmail"></strong>
+    </div>
+
+    <button class="btn" onclick="logout()">Logout</button>
+</div>
+
+<!-- CALCULATOR PAGE -->
+<div id="calculatorPage" class="container hidden">
+    <a class="back" onclick="showDashboard()">← Back</a>
+
+    <div class="calc-container">
+        <h2>Bill Calculator</h2>
+
+        <label>Billing Month</label>
+        <input id="month" type="text">
+
+        <label>kWh Used</label>
+        <input id="kwh" type="number">
+
+        <label>Cost per kWh</label>
+        <input id="rate" type="number" step="0.01">
+
+        <button class="btn-primary" onclick="calculateBill()">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
