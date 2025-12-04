@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.container.small {
+    max-width: 400px;
+}
+
+.logo {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #0066ff;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin: 10px auto 20px;
+    width: 80%;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: white;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.features {
+    margin-top: 30px;
+}
+
+.feature-box {
+    background: white;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.register {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box {
+    background: #e2e8ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 6px;
+    background: #ff5b5b;
+    color: white;
+    cursor: pointer;
+}
+
+.bill-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.calc-container {
+    background: white;
+    padding: 25px;
+    width: 330px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
